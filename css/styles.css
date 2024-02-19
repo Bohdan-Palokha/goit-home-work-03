@@ -27,7 +27,8 @@ img {
 .container {
     width: 1158px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*Header*/
@@ -175,10 +176,11 @@ img {
 
 .section-two-list {
     display: flex;
+    gap: 24px;
 }
 
 .section-two-list-li {
-    gap: 24px;
+
     width: calc((100% - 72px) / 4);
 }
 
@@ -222,6 +224,7 @@ img {
 .team-list {
     background-color: #FFFFFF;
     display: flex;
+    gap: 24px;
 }
 
 .containor-team-list {
@@ -229,7 +232,7 @@ img {
 }
 
 .team-list-li {
-    gap: 24px;
+
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
@@ -275,10 +278,12 @@ img {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .portfolio-list-li {
-    row-gap: 48px;
+
     width: calc((100% - 48px) / 3);
 }
 
