@@ -2,6 +2,11 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
+
+}
+
+a {
+    text-decoration: none;
 }
 
 h1,
@@ -39,6 +44,7 @@ img {
 
 .containor-header {
     display: flex;
+    align-items: center;
 }
 
 .containor-nav {
@@ -47,6 +53,7 @@ img {
 }
 
 .containor-nav-logo {
+    text-decoration: none;
     margin-right: 76px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -66,10 +73,7 @@ img {
     gap: 40px
 }
 
-.containor-nav-link {
-
-    margin-right: 40px;
-}
+.containor-nav-link {}
 
 .containor-nav-link .link {
     font-weight: 500;
@@ -78,6 +82,7 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
+    display: block;
 }
 
 
@@ -95,6 +100,7 @@ img {
 /**/
 .containor-address {
     font-style: normal;
+    margin-left: auto;
 }
 
 
@@ -106,7 +112,8 @@ img {
 
 .address-link {}
 
-.address-link .a {
+.address-link .link {
+    text-decoration: none;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -125,8 +132,10 @@ img {
 /*Section-One*/
 
 .containor-section-one {
+
     background-color: #2e2f42;
     padding: 188px 0;
+
 }
 
 
@@ -137,6 +146,9 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
+    margin: 0 auto;
+    padding-bottom: 48px;
+
 }
 
 .section-one-button {
@@ -153,6 +165,7 @@ img {
     background-color: #4D5AE5;
     cursor: pointer;
     font-weight: 500;
+    margin: 0 auto;
 }
 
 .section-one-button:hover {
@@ -171,7 +184,17 @@ img {
 }
 
 .visually-hidden {
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .section-two-list {
@@ -222,7 +245,7 @@ img {
 }
 
 .team-list {
-    background-color: #FFFFFF;
+
     display: flex;
     gap: 24px;
 }
@@ -232,7 +255,7 @@ img {
 }
 
 .team-list-li {
-
+    background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
@@ -290,6 +313,7 @@ img {
 
 
 .containor-portfolio-list {
+    border-radius: 0 0 4px 4px;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
